@@ -1,0 +1,1948 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SmartBank Soulation | Loan & Credit Card Solutions</title>
+
+<meta name="description"
+content="SmartBank Soulation provides assistance for Personal Loan, Business Loan, Home Loan, Vehicle Loan, Loan Against Property and Credit Card solutions.">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f7f9fc;
+    color:#10213d;
+    line-height:1.6;
+    overflow-x:hidden;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.container{
+    width:min(1180px,92%);
+    margin:auto;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    background:rgba(255,255,255,.94);
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid #e5eaf1;
+}
+
+.nav{
+    height:75px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:900;
+    font-size:20px;
+    color:#071d3d;
+}
+
+.logo img{
+    width:52px;
+    height:52px;
+    object-fit:contain;
+}
+
+.nav-links{
+    display:flex;
+    gap:25px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.nav-links a:hover{
+    color:#c99613;
+}
+
+.nav-btn{
+    background:#071d3d;
+    color:white;
+    padding:11px 20px;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+.menu{
+    display:none;
+    font-size:28px;
+    border:0;
+    background:none;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    padding:135px 0 80px;
+    background:
+    radial-gradient(circle at 85% 20%,rgba(245,197,66,.30),transparent 28%),
+    linear-gradient(135deg,#ffffff,#eef5ff);
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.badge{
+    display:inline-block;
+    background:#eaf1ff;
+    color:#0b3f87;
+    padding:8px 15px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:bold;
+    margin-bottom:18px;
+}
+
+.hero h1{
+    font-size:clamp(42px,6vw,72px);
+    line-height:1.02;
+    color:#061b3a;
+}
+
+.hero h1 span{
+    color:#c89200;
+}
+
+.hero p{
+    margin:22px 0;
+    color:#61718a;
+    font-size:18px;
+    max-width:650px;
+}
+
+.buttons{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    padding:14px 22px;
+    border-radius:12px;
+    font-weight:900;
+    border:none;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.btn-primary{
+    background:#061b3a;
+    color:white;
+    box-shadow:0 10px 25px rgba(0,0,0,.18);
+}
+
+.btn-gold{
+    background:#f5c542;
+    color:#111;
+}
+
+.btn-outline{
+    background:white;
+    border:2px solid #d9e1ec;
+    color:#061b3a;
+}
+
+.hero-img{
+    width:100%;
+    border-radius:25px;
+    box-shadow:0 20px 50px rgba(0,0,0,.15);
+    animation:float 5s ease-in-out infinite;
+}
+
+@keyframes float{
+    50%{
+        transform:translateY(-10px);
+    }
+}
+
+/* ================= STATS ================= */
+
+.stats{
+    margin-top:-25px;
+    position:relative;
+    z-index:3;
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    background:white;
+    border-radius:20px;
+    padding:18px;
+    box-shadow:0 15px 40px rgba(0,0,0,.10);
+}
+
+.stat{
+    text-align:center;
+    padding:10px;
+    border-right:1px solid #e6ebf2;
+}
+
+.stat:last-child{
+    border:0;
+}
+
+.stat strong{
+    display:block;
+    font-size:26px;
+    color:#061b3a;
+}
+
+.stat span{
+    color:#68778d;
+    font-size:13px;
+    font-weight:bold;
+}
+
+/* ================= SECTIONS ================= */
+
+section{
+    padding:85px 0;
+}
+
+.section-head{
+    text-align:center;
+    max-width:760px;
+    margin:0 auto 45px;
+}
+
+.kicker{
+    color:#b17d00;
+    font-weight:900;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:12px;
+}
+
+.section-head h2{
+    font-size:clamp(30px,4vw,46px);
+    color:#061b3a;
+    margin:7px 0;
+}
+
+.section-head p{
+    color:#68778d;
+}
+
+/* ================= SERVICES ================= */
+
+.services{
+    background:#f3f7fc;
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:27px;
+    border-radius:18px;
+    border:1px solid #e4eaf2;
+    box-shadow:0 8px 25px rgba(5,30,70,.05);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+}
+
+.icon{
+    width:50px;
+    height:50px;
+    border-radius:15px;
+    background:linear-gradient(135deg,#061b3a,#1765c0);
+    color:white;
+    display:grid;
+    place-items:center;
+    font-size:23px;
+    margin-bottom:15px;
+}
+
+.card h3{
+    color:#061b3a;
+    margin-bottom:7px;
+}
+
+.card p{
+    color:#68778d;
+    font-size:14px;
+}
+
+/* ================= ABOUT ================= */
+
+.about-grid{
+    display:grid;
+    grid-template-columns:.9fr 1.1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about-img{
+    width:100%;
+    border-radius:22px;
+    box-shadow:0 20px 50px rgba(0,0,0,.12);
+}
+
+.about-copy h2{
+    font-size:42px;
+    line-height:1.1;
+    color:#061b3a;
+    margin:8px 0 15px;
+}
+
+.about-copy p{
+    color:#68778d;
+}
+
+.check-list{
+    margin:22px 0;
+    display:grid;
+    gap:13px;
+}
+
+.check{
+    display:flex;
+    gap:10px;
+}
+
+.check span:first-child{
+    width:25px;
+    height:25px;
+    background:#e5f6ee;
+    color:#08734b;
+    border-radius:50%;
+    display:grid;
+    place-items:center;
+    font-weight:bold;
+}
+
+/* ================= PROCESS ================= */
+
+.process{
+    background:#061b3a;
+    color:white;
+}
+
+.process .section-head h2{
+    color:white;
+}
+
+.process .section-head p{
+    color:#b9c7dc;
+}
+
+.process-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.step{
+    position:relative;
+    padding:28px 18px;
+    text-align:center;
+    border:1px solid rgba(255,255,255,.15);
+    background:rgba(255,255,255,.05);
+    border-radius:18px;
+}
+
+.number{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    display:grid;
+    place-items:center;
+    background:#f5c542;
+    color:#061b3a;
+    font-weight:900;
+    margin:auto auto 15px;
+}
+
+.step h3{
+    font-size:17px;
+}
+
+.step p{
+    color:#b9c7dc;
+    font-size:13px;
+    margin-top:6px;
+}
+
+.arrow{
+    position:absolute;
+    right:-15px;
+    top:42px;
+    color:#f5c542;
+    font-size:22px;
+}
+
+/* ================= VISION ================= */
+
+.vision{
+    background:#f7f9fc;
+}
+
+.vm-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.vm-card{
+    background:white;
+    padding:35px;
+    border-radius:22px;
+    border:1px solid #e4eaf2;
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+}
+
+.vm-card h3{
+    font-size:27px;
+    color:#061b3a;
+    margin-bottom:10px;
+}
+
+.vm-card p{
+    color:#68778d;
+}
+
+/* ================= GALLERY ================= */
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.gallery-grid img{
+    width:100%;
+    height:370px;
+    object-fit:cover;
+    object-position:top;
+    border-radius:18px;
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
+    transition:.4s;
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.03);
+}
+
+/* ================= WHY ================= */
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.why-card{
+    background:white;
+    padding:25px;
+    text-align:center;
+    border-radius:18px;
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+}
+
+.why-card h3{
+    margin:10px 0;
+    color:#061b3a;
+}
+
+.why-card p{
+    color:#68778d;
+    font-size:14px;
+}
+
+/* ================= CTA ================= */
+
+.cta{
+    background:linear-gradient(135deg,#061b3a,#0b4a9d);
+    color:white;
+    border-radius:30px;
+    padding:55px;
+}
+
+.cta-grid{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:30px;
+}
+
+.cta h2{
+    font-size:40px;
+    line-height:1.1;
+}
+
+.cta p{
+    opacity:.8;
+    margin-top:10px;
+}
+
+/* ================= FAQ ================= */
+
+.faq-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+}
+
+.faq{
+    background:white;
+    border:1px solid #e2e8f0;
+    border-radius:14px;
+    padding:20px;
+}
+
+.faq strong{
+    color:#061b3a;
+}
+
+.faq p{
+    color:#68778d;
+    font-size:14px;
+    margin-top:7px;
+}
+
+/* ================= CONTACT ================= */
+
+.contact{
+    background:#f3f6fa;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.contact-box{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+.contact-row{
+    display:flex;
+    gap:14px;
+    margin:18px 0;
+    align-items:center;
+}
+
+.contact-icon{
+    width:45px;
+    height:45px;
+    background:#061b3a;
+    color:#f5c542;
+    border-radius:50%;
+    display:grid;
+    place-items:center;
+}
+
+.contact-row strong{
+    display:block;
+}
+
+.contact-row span{
+    color:#68778d;
+}
+
+.form{
+    display:grid;
+    gap:12px;
+}
+
+.form input,
+.form select,
+.form textarea{
+    width:100%;
+    padding:14px;
+    border:1px solid #d8e0eb;
+    border-radius:11px;
+    font:inherit;
+    outline:none;
+}
+
+.form textarea{
+    min-height:110px;
+    resize:vertical;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#041329;
+    color:#c8d3e5;
+    text-align:center;
+    padding:28px 0;
+    font-size:13px;
+}
+
+.footer-brand{
+    color:white;
+    font-size:20px;
+    font-weight:900;
+}
+
+.disclaimer{
+    max-width:900px;
+    margin:10px auto;
+    opacity:.65;
+}
+
+/* ================= FLOAT BUTTONS ================= */
+
+.enquiry{
+    position:fixed;
+    right:0;
+    top:50%;
+    transform:translateY(-50%);
+    z-index:1500;
+    writing-mode:vertical-rl;
+    rotate:180deg;
+    background:linear-gradient(180deg,#f5c542,#ffb300);
+    color:#061b3a;
+    padding:18px 11px;
+    border-radius:15px 0 0 15px;
+    font-weight:900;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+    animation:pulse 2s infinite;
+}
+
+.whatsapp{
+    position:fixed;
+    right:18px;
+    bottom:18px;
+    z-index:1500;
+    width:60px;
+    height:60px;
+    display:grid;
+    place-items:center;
+    border-radius:50%;
+    background:#16bd5b;
+    color:white;
+    font-size:28px;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+    animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+    50%{
+        transform:translateY(-50%) scale(1.05);
+    }
+}
+
+/* ================= MODAL ================= */
+
+.modal{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.7);
+    z-index:3000;
+    display:none;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+}
+
+.modal.show{
+    display:flex;
+}
+
+.modal-box{
+    width:min(520px,100%);
+    background:white;
+    padding:30px;
+    border-radius:22px;
+    position:relative;
+}
+
+.close{
+    position:absolute;
+    right:15px;
+    top:12px;
+    width:35px;
+    height:35px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:22px;
+}
+
+/* ================= ANIMATION ================= */
+
+.reveal{
+    opacity:0;
+    transform:translateY(35px);
+    transition:all .8s ease;
+}
+
+.reveal.show{
+    opacity:1;
+    transform:none;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:900px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .menu{
+        display:block;
+    }
+
+    .hero-grid,
+    .about-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .service-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .process-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .gallery-grid{
+        grid-template-columns:1fr;
+    }
+
+    .why-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .stats-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .vm-grid{
+        grid-template-columns:1fr;
+    }
+
+    .cta-grid{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+}
+
+@media(max-width:600px){
+
+    .hero{
+        padding-top:110px;
+    }
+
+    .hero h1{
+        font-size:43px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .service-grid,
+    .process-grid,
+    .why-grid{
+        grid-template-columns:1fr;
+    }
+
+    .stats-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .stat{
+        border-right:0;
+        border-bottom:1px solid #e6ebf2;
+    }
+
+    .cta{
+        padding:32px 24px;
+    }
+
+    .cta h2{
+        font-size:31px;
+    }
+
+    .faq-grid{
+        grid-template-columns:1fr;
+    }
+
+    .about-copy h2{
+        font-size:34px;
+    }
+
+    .enquiry{
+        right:0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+<div class="container nav">
+
+<a href="#home" class="logo">
+<img src="assets/smartbank-logo.png" alt="SmartBank Soulation">
+<span>SMARTBANK SOULATION</span>
+</a>
+
+<nav class="nav-links">
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#process">Process</a>
+<a href="#vision">Vision & Mission</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<a class="nav-btn"
+href="https://wa.me/919911513666?text=Hello%20SmartBank%20Soulation%2C%20I%20want%20to%20know%20about%20loan%20and%20credit%20card%20options.">
+WhatsApp
+</a>
+
+<button class="menu">☰</button>
+
+</div>
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<main id="home">
+
+<section class="hero">
+
+<div class="container hero-grid">
+
+<div class="reveal">
+
+<span class="badge">
+LOAN • CREDIT CARD • FINANCIAL SOLUTIONS
+</span>
+
+<h1>
+Your Financial
+<span>Partner.</span>
+</h1>
+
+<p>
+SmartBank Soulation helps customers understand available
+loan and credit-card options based on their requirement,
+profile and eligibility.
+</p>
+
+<div class="buttons">
+
+<a class="btn btn-primary"
+href="#contact">
+Start Your Enquiry
+</a>
+
+<a class="btn btn-gold"
+href="tel:9911513666">
+Call 9911513666
+</a>
+
+<a class="btn btn-outline"
+href="https://wa.me/919911513666">
+WhatsApp Us
+</a>
+
+</div>
+
+</div>
+
+
+<div class="reveal">
+
+<img
+class="hero-img"
+src="assets/smartbank-services-poster.png"
+alt="SmartBank Soulation Loan and Credit Card Services">
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= STATS ================= -->
+
+<div class="stats">
+
+<div class="container stats-grid">
+
+<div class="stat">
+<strong>6+</strong>
+<span>Financial Services</span>
+</div>
+
+<div class="stat">
+<strong>4 Step</strong>
+<span>Simple Process</span>
+</div>
+
+<div class="stat">
+<strong>1 Call</strong>
+<span>Start Your Enquiry</span>
+</div>
+
+<div class="stat">
+<strong>Support</strong>
+<span>Guidance & Assistance</span>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section id="services" class="services">
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<span class="kicker">
+Our Services
+</span>
+
+<h2>
+Financial Solutions Under One Roof
+</h2>
+
+<p>
+Explore loan and credit-card assistance according to your
+requirement and eligibility.
+</p>
+
+</div>
+
+
+<div class="service-grid">
+
+<div class="card reveal">
+<div class="icon">₹</div>
+<h3>Personal Loan</h3>
+<p>
+Assistance for eligible personal funding requirements,
+subject to lender criteria.
+</p>
+</div>
+
+<div class="card reveal">
+<div class="icon">▣</div>
+<h3>Business Loan</h3>
+<p>
+Funding guidance for eligible business and
+working-capital requirements.
+</p>
+</div>
+
+<div class="card reveal">
+<div class="icon">⌂</div>
+<h3>Home Loan</h3>
+<p>
+Assistance for property purchase, construction
+or eligible home-loan requirements.
+</p>
+</div>
+
+<div class="card reveal">
+<div class="icon">🚗</div>
+<h3>Vehicle Loan</h3>
+<p>
+Guidance for eligible vehicle-finance options
+and documentation.
+</p>
+</div>
+
+<div class="card reveal">
+<div class="icon">▤</div>
+<h3>Credit Card Assistance</h3>
+<p>
+Understand available card options and
+the application process.
+</p>
+</div>
+
+<div class="card reveal">
+<div class="icon">🏠</div>
+<h3>Loan Against Property</h3>
+<p>
+Assistance for eligible property-backed
+funding requirements.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about">
+
+<div class="container about-grid">
+
+<div class="reveal">
+
+<img
+class="about-img"
+src="assets/smartbank-business-card.png"
+alt="SmartBank Soulation Business Card">
+</div>
+
+
+<div class="about-copy reveal">
+
+<span class="kicker">
+About SmartBank Soulation
+</span>
+
+<h2>
+A guidance-first financial assistance brand.
+</h2>
+
+<p>
+SmartBank Soulation focuses on understanding the customer's
+requirement first and then helping identify applicable
+loan or credit-card options.
+</p>
+
+<div class="check-list">
+
+<div class="check">
+<span>✓</span>
+<div>
+<strong>Requirement First</strong><br>
+Understand your purpose, amount and basic profile.
+</div>
+</div>
+
+<div class="check">
+<span>✓</span>
+<div>
+<strong>Clear Communication</strong><br>
+Explain applicable documentation and next steps.
+</div>
+</div>
+
+<div class="check">
+<span>✓</span>
+<div>
+<strong>Personalized Guidance</strong><br>
+Guide customers according to their requirement.
+</div>
+</div>
+
+<div class="check">
+<span>✓</span>
+<div>
+<strong>Responsible Assistance</strong><br>
+No false promise of guaranteed loan approval.
+</div>
+</div>
+
+</div>
+
+<a href="#contact" class="btn btn-primary">
+Talk to an Advisor
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= PROCESS ================= -->
+
+<section id="process" class="process">
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<span class="kicker" style="color:#f5c542">
+How It Works
+</span>
+
+<h2>
+Our Simple 4-Step Process
+</h2>
+
+<p>
+From enquiry to application assistance,
+we keep the process structured and easy to understand.
+</p>
+
+</div>
+
+
+<div class="process-grid">
+
+<div class="step reveal">
+
+<div class="number">1</div>
+
+<h3>Share Requirement</h3>
+
+<p>
+Tell us your loan type, amount,
+purpose and basic profile.
+</p>
+
+<span class="arrow">→</span>
+
+</div>
+
+
+<div class="step reveal">
+
+<div class="number">2</div>
+
+<h3>Profile Review</h3>
+
+<p>
+We understand income, employment,
+business profile and existing obligations.
+</p>
+
+<span class="arrow">→</span>
+
+</div>
+
+
+<div class="step reveal">
+
+<div class="number">3</div>
+
+<h3>Suitable Options</h3>
+
+<p>
+Available options are discussed based
+on eligibility and applicable products.
+</p>
+
+<span class="arrow">→</span>
+
+</div>
+
+
+<div class="step reveal">
+
+<div class="number">4</div>
+
+<h3>Application Support</h3>
+
+<p>
+Documentation and application steps
+are guided through the process.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= VISION MISSION ================= -->
+
+<section id="vision" class="vision">
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<span class="kicker">
+Our Direction
+</span>
+
+<h2>
+Vision & Mission
+</h2>
+
+<p>
+Built around clarity, responsible guidance and
+long-term customer trust.
+</p>
+
+</div>
+
+
+<div class="vm-grid">
+
+<div class="vm-card reveal">
+
+<h3>🎯 Our Vision</h3>
+
+<p>
+To build a trusted financial assistance brand where
+customers can understand loan and credit-card options
+clearly and make informed financial decisions.
+</p>
+
+</div>
+
+
+<div class="vm-card reveal">
+
+<h3>🚀 Our Mission</h3>
+
+<p>
+To simplify the financial enquiry journey through
+requirement-based guidance, transparent communication,
+structured documentation support and responsible customer service.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= WHY CHOOSE US ================= -->
+
+<section>
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<span class="kicker">
+Why Choose Us
+</span>
+
+<h2>
+Simple. Clear. Customer Focused.
+</h2>
+
+</div>
+
+
+<div class="why-grid">
+
+<div class="why-card reveal">
+
+<div class="icon" style="margin:auto">
+✓
+</div>
+
+<h3>Clear Guidance</h3>
+
+<p>
+Understand your available options before proceeding.
+</p>
+
+</div>
+
+
+<div class="why-card reveal">
+
+<div class="icon" style="margin:auto">
+₹
+</div>
+
+<h3>Multiple Options</h3>
+
+<p>
+Explore applicable loan and credit-card solutions.
+</p>
+
+</div>
+
+
+<div class="why-card reveal">
+
+<div class="icon" style="margin:auto">
+👥
+</div>
+
+<h3>Personal Support</h3>
+
+<p>
+Get assistance based on your individual requirement.
+</p>
+
+</div>
+
+
+<div class="why-card reveal">
+
+<div class="icon" style="margin:auto">
+🛡
+</div>
+
+<h3>Transparency</h3>
+
+<p>
+No guaranteed-approval claims or misleading promises.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= POSTERS ================= -->
+
+<section>
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<span class="kicker">
+Our Brand
+</span>
+
+<h2>
+SmartBank Soulation
+</h2>
+
+<p>
+Loan, credit-card and financial solution information.
+</p>
+
+</div>
+
+
+<div class="gallery-grid">
+
+<img
+class="reveal"
+src="assets/smartbank-poster.png"
+alt="SmartBank Soulation Poster">
+
+<img
+class="reveal"
+src="assets/smartbank-services-poster.png"
+alt="SmartBank Soulation Services">
+
+<img
+class="reveal"
+src="assets/smartbank-business-card.png"
+alt="SmartBank Soulation Business Card">
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section>
+
+<div class="container">
+
+<div class="cta reveal">
+
+<div class="cta-grid">
+
+<div>
+
+<h2>
+Have a Loan or Credit Card Requirement?
+</h2>
+
+<p>
+Send your requirement and get guidance for the next suitable step.
+</p>
+
+</div>
+
+<a href="#contact" class="btn btn-gold">
+Make an Enquiry
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= FAQ ================= -->
+
+<section>
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<span class="kicker">
+FAQs
+</span>
+
+<h2>
+Before You Apply
+</h2>
+
+</div>
+
+
+<div class="faq-grid">
+
+<div class="faq reveal">
+
+<strong>
+Is loan approval guaranteed?
+</strong>
+
+<p>
+No. Approval depends on the concerned lender's eligibility,
+verification and applicable terms.
+</p>
+
+</div>
+
+
+<div class="faq reveal">
+
+<strong>
+What affects the loan amount?
+</strong>
+
+<p>
+Income, turnover, credit profile, existing obligations,
+property details where applicable and lender criteria
+can affect eligibility.
+</p>
+
+</div>
+
+
+<div class="faq reveal">
+
+<strong>
+What documents are required?
+</strong>
+
+<p>
+Documents vary by product and lender. KYC, income,
+banking and supporting documents may be required.
+</p>
+
+</div>
+
+
+<div class="faq reveal">
+
+<strong>
+Can I ask about low CIBIL?
+</strong>
+
+<p>
+Yes. Share your profile and requirement. Available
+options can be discussed, but approval cannot be guaranteed.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="contact">
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<span class="kicker">
+Contact Us
+</span>
+
+<h2>
+Start Your Enquiry
+</h2>
+
+<p>
+Fill the form and your enquiry will open directly in WhatsApp.
+</p>
+
+</div>
+
+
+<div class="contact-grid">
+
+
+<div class="contact-box reveal">
+
+<div class="contact-row">
+
+<div class="contact-icon">☎</div>
+
+<div>
+<strong>Call / WhatsApp</strong>
+<span>9911513666</span>
+</div>
+
+</div>
+
+
+<div class="contact-row">
+
+<div class="contact-icon">⌖</div>
+
+<div>
+<strong>Office</strong>
+<span>
+H Block, Sector 63, Noida – 201301
+</span>
+</div>
+
+</div>
+
+
+<div class="contact-row">
+
+<div class="contact-icon">✉</div>
+
+<div>
+<strong>Email</strong>
+<span>
+ibijender46@gmail.com
+</span>
+</div>
+
+</div>
+
+
+<p style="color:#68778d;margin-top:20px">
+
+For your security, never share OTP, PIN,
+CVV, passwords or banking credentials with anyone.
+
+</p>
+
+</div>
+
+
+<div class="contact-box reveal">
+
+<form id="leadForm" class="form">
+
+<input
+id="name"
+required
+placeholder="Full Name">
+
+<input
+id="phone"
+required
+inputmode="numeric"
+placeholder="Mobile Number">
+
+<select id="loan" required>
+
+<option value="">
+Select Requirement
+</option>
+
+<option>Personal Loan</option>
+<option>Business Loan</option>
+<option>Home Loan</option>
+<option>Vehicle Loan</option>
+<option>Loan Against Property</option>
+<option>Credit Card</option>
+<option>Other</option>
+
+</select>
+
+<input
+id="amount"
+placeholder="Approx. Requirement">
+
+<textarea
+id="message"
+placeholder="Tell us briefly about your requirement">
+</textarea>
+
+<button class="btn btn-primary" type="submit">
+Send Enquiry on WhatsApp
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-brand">
+SMARTBANK SOULATION
+</div>
+
+<div>
+Loan • Credit Cards • Financial Solutions
+</div>
+
+<div class="disclaimer">
+
+SmartBank Soulation provides financial assistance/guidance.
+Loan approval, interest rate, amount, tenure, fees and other
+terms are subject to the concerned bank/NBFC/lender/card issuer
+and applicant eligibility. No guaranteed approval claim is made.
+
+</div>
+
+<div style="margin-top:12px">
+
+© <span id="year"></span>
+SmartBank Soulation. All Rights Reserved.
+
+</div>
+
+</div>
+
+</footer>
+
+
+<!-- ================= FLOATING BUTTONS ================= -->
+
+<a href="#contact" class="enquiry">
+ENQUIRE NOW
+</a>
+
+
+<a
+class="whatsapp"
+href="https://wa.me/919911513666?text=Hello%20SmartBank%20Soulation%2C%20I%20want%20to%20know%20about%20loan%20and%20credit%20card%20options."
+target="_blank">
+☏
+</a>
+
+
+<!-- ================= MODAL ================= -->
+
+<div class="modal" id="modal">
+
+<div class="modal-box">
+
+<button class="close" id="close">
+×
+</button>
+
+<h2 style="color:#061b3a">
+Quick Enquiry
+</h2>
+
+<p style="color:#68778d;margin-bottom:15px">
+Share your requirement and continue on WhatsApp.
+</p>
+
+
+<form id="quickForm" class="form">
+
+<input
+id="qname"
+required
+placeholder="Your Name">
+
+<input
+id="qphone"
+required
+placeholder="Mobile Number">
+
+<select id="qloan" required>
+
+<option value="">
+Select Service
+</option>
+
+<option>Personal Loan</option>
+<option>Business Loan</option>
+<option>Home Loan</option>
+<option>Vehicle Loan</option>
+<option>Loan Against Property</option>
+<option>Credit Card</option>
+
+</select>
+
+<button class="btn btn-primary">
+Continue to WhatsApp
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+/* Scroll Animation */
+
+const observer = new IntersectionObserver(
+
+(entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+}
+
+});
+
+},
+
+{
+threshold:.12
+}
+
+);
+
+
+document
+.querySelectorAll(".reveal")
+.forEach(el=>observer.observe(el));
+
+
+/* Year */
+
+document.getElementById("year").textContent =
+new Date().getFullYear();
+
+
+/* WhatsApp Function */
+
+function sendWhatsApp(text){
+
+window.open(
+"https://wa.me/919911513666?text="
++encodeURIComponent(text),
+"_blank"
+);
+
+}
+
+
+/* Main Enquiry */
+
+document
+.getElementById("leadForm")
+.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+const name =
+document.getElementById("name").value;
+
+const phone =
+document.getElementById("phone").value;
+
+const loan =
+document.getElementById("loan").value;
+
+const amount =
+document.getElementById("amount").value;
+
+const message =
+document.getElementById("message").value;
+
+
+const text =
+`Hello SmartBank Soulation,
+
+I want a loan/credit card enquiry.
+
+Name: ${name}
+
+Mobile: ${phone}
+
+Requirement: ${loan}
+
+Approx Amount: ${amount || "Not specified"}
+
+Message:
+${message || "Not specified"}
+
+Please guide me regarding the next steps.`;
+
+
+sendWhatsApp(text);
+
+});
+
+
+/* Floating Enquiry Modal */
+
+const modal =
+document.getElementById("modal");
+
+
+document
+.querySelector(".enquiry")
+.addEventListener("click",function(e){
+
+e.preventDefault();
+
+modal.classList.add("show");
+
+});
+
+
+/* Close Modal */
+
+document
+.getElementById("close")
+.addEventListener("click",function(){
+
+modal.classList.remove("show");
+
+});
+
+
+/* Close Outside */
+
+modal.addEventListener("click",function(e){
+
+if(e.target === modal){
+
+modal.classList.remove("show");
+
+}
+
+});
+
+
+/* Quick Enquiry */
+
+document
+.getElementById("quickForm")
+.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+
+const name =
+document.getElementById("qname").value;
+
+const phone =
+document.getElementById("qphone").value;
+
+const loan =
+document.getElementById("qloan").value;
+
+
+const text =
+`Hello SmartBank Soulation,
+
+I am interested in ${loan}.
+
+Name: ${name}
+
+Mobile: ${phone}
+
+Please guide me about the available options and process.`;
+
+
+sendWhatsApp(text);
+
+modal.classList.remove("show");
+
+});
+
+</script>
+
+</body>
+</html>
